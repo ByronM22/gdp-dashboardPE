@@ -8,6 +8,8 @@ def limpiar_pantalla():
 
 # Título de la aplicación
 st.title("Simulación de Punto de Equilibrio y Utilidad BM")
+st.subheader("Autor: Byron Méndez")
+
 
 # Selección de tipo de cálculo
 tipo_calculo = st.radio(
