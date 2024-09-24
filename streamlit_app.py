@@ -7,7 +7,7 @@ def limpiar_pantalla():
     st.session_state.clear()
 
 # Título de la aplicación
-st.title("Simulación de Punto de Equilibrio y Utilidad BM")
+st.subheader("Simulación de Punto de Equilibrio y Utilidad")
 st.subheader("Autor: Byron Méndez")
 
 
