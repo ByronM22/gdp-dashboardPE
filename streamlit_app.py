@@ -7,7 +7,7 @@ def limpiar_pantalla():
     st.session_state.clear()
 
 # Título de la aplicación
-st.title("Simulación de Punto de Equilibrio y Utilidad")
+st.title("Simulación de Punto de Equilibrio y Utilidad BM")
 
 # Selección de tipo de cálculo
 tipo_calculo = st.radio(
@@ -18,7 +18,7 @@ tipo_calculo = st.radio(
 # Inputs y cálculos según la selección
 if tipo_calculo == 'Cálculo con unidades':
     # Parámetros de entrada
-    gastos_fijos = st.number_input('Ingrese los gastos generales ($)', min_value=0, value=0000, step=100, key="gastos_fijos")
+    gastos_fijos = st.number_input('Ingrese los gastos generales ($)', min_value=0, value=3000, step=100, key="gastos_fijos")
     costo_variable = st.number_input('Ingrese el costo variable por unidad ($)', min_value=0.0, value=2.0, step=0.1, key="costo_variable")
     precio_venta = st.number_input('Ingrese el precio de venta por unidad ($)', min_value=0.0, value=5.0, step=0.1, key="precio_venta")
     unidades_producir = st.number_input('Unidades a producir', min_value=0, value=1000, step=10, key="unidades_producir")
